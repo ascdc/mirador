@@ -14,6 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 	nvm use v6.1.0 && \
 	git clone https://github.com/ProjectMirador/mirador.git /var/www/mirador && \
 	npm install -g grunt-cli && \
+	npm install -g bower && \
 	npm install && \
 	bower install
 	
