@@ -1,7 +1,10 @@
 FROM ubuntu:14.04.5
 MAINTAINER ASCDC <ascdc@gmail.com>
 
+ADD run.sh /run.sh
+
 RUN DEBIAN_FRONTEND=noninteractive && \
+	chmod +x /*.sh && \
 	apt-get update && \
 	apt-get -y dist-upgrade && \
 	apt-get -y install vim curl git && \
