@@ -19,4 +19,4 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 	bower install --allow-root 
 	
 WORKDIR /var/www/mirador
-ENTRYPOINT ["grunt"]
+ENTRYPOINT ["/run.sh"]
