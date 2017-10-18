@@ -15,7 +15,7 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 RUN DEBIAN_FRONTEND=noninteractive && \
 	apt-get -qq update && \
 	apt-get -y -qq dist-upgrade && \
-	apt-get -y -qq install vim curl wget git python build-essential pkg-config libcairo2-dev libjpeg-dev libgif-dev && \
+	apt-get -y -qq install vim curl wget git sudo python build-essential pkg-config libcairo2-dev libjpeg-dev libgif-dev && \
 	mkdir -p /var/www/mirador && \
 	cd /var/www/mirador && \
 	curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - && \
